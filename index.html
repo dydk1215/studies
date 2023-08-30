@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS</title>
   <style>
+    #maincontent {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto auto auto auto auto;
+    }
+    
     #flexbox {
       display: flex;
       flex-wrap: wrap;
@@ -18,11 +25,15 @@
 </head>
 
 <body>
-  <div id="flexbox">
-    <div class="flexitem">box 1</div>
-    <div class="flexitem">box 2</div>
-    <div class="flexitem">box 3</div>
-    <div class="flexitem">box 4</div>
+  <div id="maincontent">
+    <div class="section">  
+      <div id="flexbox">
+        <div class="flexitem">box 1</div>
+        <div class="flexitem">box 2</div>
+        <div class="flexitem">box 3</div>
+        <div class="flexitem">box 4</div>
+      </div>
+    </div>
   </div>
 </body>
 
