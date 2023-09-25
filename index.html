@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
+    <script>
+        console.log("top-checkpoint")
+    </script>
+    <script type="module" src="./module1.js">
+        const { myConst1 } = require('./module1.js');
+        console.log(myConst1);
+    </script>
     <style>
         body {
             margin: 0px;
@@ -157,9 +164,8 @@
         }
 
     </script>
-    <script type="module" src="./module1.js">
-        const { myConst1 } = require('./module1.js');
-        console.log(myConst1);
+    <script>
+        console.log("checkpoint")
     </script>
 </body>
 
