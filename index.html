@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
-    <script>
-        console.log("top-checkpoint")
-    </script>
     <script type="module" src="./module1.js">
-        const { myConst1 } = require('./module1.js');
+        import { myConst1 } from './module1.js';
         console.log(myConst1);
+        console.log(myConst2);
     </script>
     <style>
         body {
@@ -163,9 +161,6 @@
             }
         }
 
-    </script>
-    <script>
-        console.log("checkpoint")
     </script>
 </body>
 
